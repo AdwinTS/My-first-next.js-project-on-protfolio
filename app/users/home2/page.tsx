@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 const Home2 = () => {
   return (
-    <main className="bg-cover bg-center h-screen" style={{ backgroundImage: "url('/Motivation Quotes.jpg')" }}>
+    <main className="bg-cover bg-center h-screen" style={{ backgroundImage: "url('/beauti.jpg')" }}>
       <section className="about-me">
-        <h1 className="font-bold p-6  btn-neutral">Hello Everyone I am Adwin T Sunil</h1>
+        <h1 className="font-bold p-6 btn-neutral">Hello Everyone I am Adwin T Sunil</h1>
         <h2 className="py-5  btn-neutral">To get started I am a passionate computer science student who looks for every opportunity and likes coding very much</h2>
         <Link href="/users/new" className="btn btn-secondary py-5">To know about the coding languages I know</Link>
       </section>
 
       <section className="drawer-section">
         <div className="drawer">
-          <h1 className="pr-6">To get more info about me</h1>
+          <h1 className="pr-6 btn-neutral">To get more info about me</h1>
           <input id="my-drawer" type="checkbox" className="drawer-toggle py-9" />
           <div className="drawer-content pr-425">
             {/* Page content here */}
@@ -63,7 +63,13 @@ const Home2 = () => {
           </div>
         </div>
       </section>
+      <label className="swap swap-flip text-9xl">
+  {/* this hidden checkbox controls the state */}
+  <input type="checkbox" />
 
+  <div className="swap-on">😈</div>
+  <div className="swap-off">😇</div>
+</label>
 
       {/* Commented out sections are preserved */}
       {/* <ProductCard/> */}
