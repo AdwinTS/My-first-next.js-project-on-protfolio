@@ -1,50 +1,94 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const Home2 = () => {
   return (
-    <main className="bg-cover bg-center h-screen" style={{ backgroundImage: "url('/beauti.jpg')" }}>
+    <main
+      className="bg-cover bg-center h-screen"
+      style={{ backgroundImage: "url('/beauti.jpg')" }}
+    >
       <section className="about-me">
-        <h1 className="font-bold p-6 btn-neutral">Hello Everyone I am Adwin T Sunil</h1>
-        <h2 className="py-5  btn-neutral">To get started I am a passionate computer science student who looks for every opportunity and likes coding very much</h2>
-        <Link href="/users/new" className="btn btn-secondary py-5">To know about the coding languages I know</Link>
+        <h1 className="font-bold p-6 btn-neutral">
+          Hello Everyone I am Adwin T Sunil
+        </h1>
+        <h2 className="py-5  btn-neutral">
+          To get started I am a passionate computer science student who looks
+          for every opportunity and likes coding very much
+        </h2>
+        <Link href="/users/new" className="btn btn-secondary py-5">
+          To know about the coding languages I know
+        </Link>
       </section>
 
       <section className="drawer-section">
         <div className="drawer">
           <h1 className="pr-6 btn-neutral">To get more info about me</h1>
-          <input id="my-drawer" type="checkbox" className="drawer-toggle py-9" />
+          <input
+            id="my-drawer"
+            type="checkbox"
+            className="drawer-toggle py-9"
+          />
           <div className="drawer-content pr-425">
             {/* Page content here */}
-            <label htmlFor="my-drawer" className="btn btn-primary drawer-button pr-14">Open drawer</label>
+            <label
+              htmlFor="my-drawer"
+              className="btn btn-primary drawer-button pr-14"
+            >
+              Open drawer
+            </label>
           </div>
           <div className="drawer-side">
-            <label   
- htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>   
-
+            <label
+              htmlFor="my-drawer"
+              aria-label="close sidebar"
+              className="drawer-overlay"
+            ></label>{" "}
+             
             <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
               {/* Sidebar content here */}
-              <li><a href="/users/new/contact">To get contact</a></li>
-              <li><a href="/users/new/contact/my-projects">View the projects I did</a></li>
+              <li>
+                <a href="/users/new/contact">To get contact</a>
+              </li>
+              <li>
+                <a href="/users/new/contact/my-projects">
+                  View the projects I did
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </section>
 
       <section className="education pt-7">
-        <div tabIndex={0} className="collapse border-base-300 bg-base-200 border">
-          <div className="collapse-title text-xl font-medium">To know where I am studying click me</div>
+        <div
+          tabIndex={0}
+          className="collapse border-base-300 bg-base-200 border"
+        >
+          <div className="collapse-title text-xl font-medium">
+            To know where I am studying click me
+          </div>
           <div className="collapse-content">
-            <p>I am currently pursuing btech computer science at Model Engineering College Thrikkara</p>
-            <p>I studied my classes from lkg to 12th standard in Jai Rani Public School Thodupuzha</p>
+            <p>
+              I am currently pursuing btech computer science at Model
+              Engineering College Thrikkara
+            </p>
+            <p>
+              I studied my classes from lkg to 12th standard in Jai Rani Public
+              School Thodupuzha
+            </p>
             <p>I got 1725 rank in keam and 90.3 percentile in jee mains</p>
           </div>
         </div>
       </section>
 
       <section className="interests">
-        <div tabIndex={0} className="collapse border-base-300 bg-base-200 border">
-          <div className="collapse-title text-xl font-medium">My habits and interests</div>
+        <div
+          tabIndex={0}
+          className="collapse border-base-300 bg-base-200 border"
+        >
+          <div className="collapse-title text-xl font-medium">
+            My habits and interests
+          </div>
           <div className="collapse-content">
             <p>I like creating exciting projects</p>
             <p>I also in my free times read books etc</p>
@@ -54,22 +98,33 @@ const Home2 = () => {
       </section>
 
       <section className="skills">
-        <div tabIndex={0} className="collapse border-base-300 bg-base-200 border">
-          <div className="collapse-title text-xl font-medium">My Major Skills</div>
+        <div
+          tabIndex={0}
+          className="collapse border-base-300 bg-base-200 border"
+        >
+          <div className="collapse-title text-xl font-medium">
+            My Major Skills
+          </div>
           <div className="collapse-content">
             <p>I know Next.js and React.js</p>
-            <p>I have got certificate from IBM skillsbuild which was a big achievement for me</p>
-            <p>I also know C++ and I majorly use Python for backend with help of different modules</p>
+            <p>
+              I have got certificate from IBM skillsbuild which was a big
+              achievement for me
+            </p>
+            <p>
+              I also know C++ and I majorly use Python for backend with help of
+              different modules
+            </p>
           </div>
         </div>
       </section>
       <label className="swap swap-flip text-9xl">
-  {/* this hidden checkbox controls the state */}
-  <input type="checkbox" />
+        {/* this hidden checkbox controls the state */}
+        <input type="checkbox" />
 
-  <div className="swap-on">😈</div>
-  <div className="swap-off">😇</div>
-</label>
+        <div className="swap-on">😈</div>
+        <div className="swap-off">😇</div>
+      </label>
 
       {/* Commented out sections are preserved */}
       {/* <ProductCard/> */}
@@ -239,6 +294,3 @@ export default Home2;
 //     //   </div>
 //     // </main>
 //   )
-
-
-

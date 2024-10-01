@@ -19,7 +19,7 @@ export default function Home() {
           Myself Adwin T Sunil a cs undergraduate at Model Engineering College Thrikkakara
         </p>
         
-        <Link href="/users/home2" className='btn btn-primary py-5'>To know More about me click</Link>
+        <Link href="/users/home3" className='btn btn-primary py-5'>To know More about me click</Link>
       </div>
     </div>
   </div>
